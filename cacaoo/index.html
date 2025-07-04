@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El arte y la historia del cacao</title>
+<style>
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f1ee;
+  color: #3b2e2a;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  background-color: #5c4033;
+  color: #fff;
+}
+
+.menu {
+  background: url('cacos.jpg') center/cover no-repeat, #3b2e2a;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu button {
+  background-color: rgba(255,255,255,0.8);
+  color: #3b2e2a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 3s;
+}
+
+.menu button:hover {
+  background-color: #d5c4a1;
+}
+
+section {
+  margin: 30px;
+  padding: 20px;
+  background-color: #fff9f2;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #5c4033;
+  color: #fff;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>El arte y la historia del cacao</h1>
+</header>
+
+<div class="menu">
+  <button onclick="document.getElementById('apartados').scrollIntoView()">Ir a los apartados</button>
+  <button onclick="window.location.href='PFD.pdf'">Descargar PDF</button>
+</div>
+
+<section>
+  <h2>Introducción</h2>
+  <h2>La Historia del Cacao en México: Un Legado Rico y Complejo</h2>
+  <p>
+    El cacao es mucho más que un fruto; es símbolo de cultura, historia y sabor. Cultivado desde tiempos precolombinos, 
+    fue considerado un regalo de los dioses y utilizado como moneda, alimento y ritual. Su viaje desde las antiguas civilizaciones 
+    hasta las modernas fábricas de chocolate narra una historia de tradición y pasión por la tierra.
+    Mexico es conociderado uno de los lugares de origen del cacao, con una historia que se remonta mas de 3,000 años. Los antiguos mayas
+    y aztecas veneraban el cacao no solo como una fuente de alimento, sino tambien como una moneda, simbolo de estatus y un elemento 
+    central en sus rituales religiosos.
+La historia del cacao en México es un legado rico y complejo que abarca más de 3,000 años. Desde su origen en la época prehispánica hasta su procesamiento en la actualidad, el cacao ha sido un elemento central en la cultura y la economía de México. La preservación de las variedades tradicionales y la promoción de la producción sostenible son fundamentales para asegurar el futuro del cacao en México.
+
+<h2>La Conquista y el Cambio en la Producción</h2>
+Con la llegada de los españoles en el siglo XVI, el cacao se convirtió en una mercancía valiosa en el comercio colonial. Los españoles introdujeron nuevas técnicas de procesamiento y molido, y establecieron plantaciones de cacao en regiones como Tabasco y Chiapas. El cacao mexicano se convirtió en un producto codiciado en Europa, donde se consumía en forma de chocolate.
+<h2>El Procesamiento del Cacao en la Actualidad</h2>
+En la actualidad, México sigue siendo un productor importante de cacao, con una gran variedad de sabores y texturas. El procesamiento del cacao implica varias etapas, desde la cosecha de las mazorcas hasta la molienda y el prensado de los granos. Los productores de cacao en México están trabajando para preservar las variedades tradicionales y promover la producción sostenible y el comercio justo.
+<h2>La Importancia Cultural y Económica del Cacao</h2>
+El cacao sigue siendo un elemento importante en la cultura y la economía de México. La producción de cacao proporciona ingresos a miles de familias campesinas, y el consumo de chocolate es una tradición arraigada en la sociedad mexicana. Además, el cacao es un símbolo de la riqueza cultural y la biodiversidad de México, y su preservación es fundamental para el patrimonio nacional.
+<h2>Conclusion</h2>
+La historia del cacao en México es un legado rico y complejo que abarca más de 3,000 años. Desde su origen en la época prehispánica hasta su procesamiento en la actualidad, el cacao ha sido un elemento central en la cultura y la economía de México. La preservación de las variedades tradicionales y la promoción de la producción sostenible son fundamentales para asegurar el futuro del cacao en México.
+  </p>
+</section>
+
+<div id="apartados">
+  <style>
+.acordeon {
+  background-color: #048a0b;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  outline: none;
+  transition: background-color 2s ease;
+}
+
+.acordeon:hover {
+  background-color: #4f7a36b0;
+}
+
+.panel {
+  display: none;
+  padding: 15px;
+  background-color: #4f7a36b0;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.panel img {
+  max-width: 30%;
+  margin-top: 30px;
+}
+</style>
+
+<section id="apartados">
+  <h2>Apartados del Proceso del Cacao</h2>
+<!-- Cosecha -->
+<button class="acordeon">🌱 Cosecha</button>
+<div class="panel">
+  <p>Se cosechan las mazorcas de cacao cuando están maduras, lo que se puede identificar por el cambio de color. Se cortan cuidadosamente con herramientas para no dañar la planta ni los frutos.</p>
+
+  <div style="display: flex; gap: 10px;">
+    <img src="cosecha.jpg" alt="Cosecha" style="width: 50%;">
+    <img src="arboles.jpg" alt="Árboles" style="width: 50%;">
+  </div>
+</div>
+
+<!-- Fermentación -->
+<button class="acordeon">🍫 Fermentación</button>
+<div class="panel">
+  <p>Se extraen las semillas junto con la pulpa y se colocan en cajas, se pueden cubrir con hojas de platano con hojas de plátano. Durante varios días, las semillas fermentan para desarrollar el sabor y reducir la acidez del grano.</p>
+    
+  <div style="display: flex; gap: 10px;">
+    <img src="fermentacion.jpg" alt="fermentacion" style="width: 50%;">
+    <img src="fermentacion1.jpg" alt="fermentacion" style="width: 50%;">
+  </div>
+</div>
+
+<!-- Secado -->
+<button class="acordeon">☀ Secado</button>
+<div class="panel">
+  <p>Después de la fermentación, los granos se extienden al sol y se revuelven con frecuencia para que se sequen de manera uniforme. Este proceso disminuye la humedad y previene la formación de moho.</p>
+  
+  <div style="display: flex; gap: 10px;">
+    <img src="secado1.jpg" alt="Secado" style="width: 50%;">
+    <img src="secado2.jpg" alt="Secado" style="width: 50%;">
+  </div>
+</div>
+
+<!-- Tostado -->
+<button class="acordeon">🔥 Tostado</button>
+<div class="panel">
+  <p>Los granos secos se tuestan a temperaturas específicas para intensificar su aroma y sabor. El tostado también facilita la separación de la cáscara de la parte comestible del grano.</p>
+
+ <div style="display: flex; gap: 10px;">
+    <img src="tostado.jpg" alt="tostado" style="width: 50%;">
+    <div>
+    </section>
+
+<script>
+// Código para que funcione el acordeón
+const acc = document.getElementsByClassName("acordeon");
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    const panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<footer>
+  CAC LAS DOS BUENA VISTAS
+</footer>
+
+</body>
+</html>
